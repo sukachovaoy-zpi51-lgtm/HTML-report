@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sukachova Olha</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <button class="burger-btn" aria-label="Menu" data-btn="burger-btn">
+                    <span class="burger-btn__line"></span>
+                    <span class="burger-btn__line"></span>
+                    <span class="burger-btn__line"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#hero-section">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#works-section">Works</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#contacts-section">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main" styles="flex-grow: 1;">
+            <section class="section hero-section" id="hero-section">
+                <div class="container">
+                    <div class="hero-section__container">
+                        <div class="hero-section__column hero-section__column--min">
+                            <div class="hero-section__img">
+                                <img src="./images/image.webp" alt="Olha Sukachova">
+                            </div>
+                            
+                        </div>
+                        <div class="hero-section__column">
+                            <h1 class="h1">
+                                Hi, I am Olha, Web Developer
+                            </h1>
+                            <p class="hero-section__text text">
+                                I create responsive and user-friendly websites.
+                            </p>
+                            <a href="https://github.com/sukachovaoy-zpi51-lgtm" class="btn btn--primary" target="_blank">
+                                    View My GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section content-section" id="works-section">
+                <div class="container"></div>
+            </section>
+
+            <section class="section contacts-section" id="contacts-section">
+                <div class="container"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div></div>
+        </footer>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
