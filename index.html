@@ -10,60 +10,51 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <button class="burger-btn" aria-label="Menu" data-btn="burger-btn">
-                    <span class="burger-btn__line"></span>
-                    <span class="burger-btn__line"></span>
-                    <span class="burger-btn__line"></span>
-                </button>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="#hero-section">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#works-section">Works</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#contacts-section">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
+                <h1 class="h1">
+                    НТУУ "КПІ імені Ігоря Сікорського"
+                </h1>
+                <h2 class="h2">
+                    <span class="upper">звіти з практичних робіт</span> (компʼютерного практикуму) з дисципліни <span class="upper accent">"Проєктування web-застосунків"</span>
+                </h2>
+                <p class="header__text">
+                    <span class="accent">Студентка: </span>Сукачова Ольга Юріївна, <span class="accent">Група: </span> ІП-зп51
+                </p>
             </div>
         </header>
-        <main class="main" styles="flex-grow: 1;">
-            <section class="section hero-section" id="hero-section">
+        <main class="main">
+            <section class="section">
                 <div class="container">
-                    <div class="hero-section__container">
-                        <div class="hero-section__column hero-section__column--min">
-                            <div class="hero-section__img">
-                                <img src="./images/image.webp" alt="Olha Sukachova">
-                            </div>
-                            
-                        </div>
-                        <div class="hero-section__column">
-                            <h1 class="h1">
-                                Hi, I am Olha, Web Developer
-                            </h1>
-                            <p class="hero-section__text text">
-                                I create responsive and user-friendly websites.
-                            </p>
-                            <a href="https://github.com/sukachovaoy-zpi51-lgtm" class="btn btn--primary" target="_blank">
-                                    View My GitHub
-                            </a>
-                        </div>
+                    <div class="tabs">
+                        <div class="tabs__item tabs__item--active" data-tab="1">Практична робота №1</div>
+                        <div class="tabs__item" data-tab="2">Практична робота №2</div>
+                        <div class="tabs__item" data-tab="3">Практична робота №3</div>
+                        <div class="tabs__item" data-tab="4">Практична робота №4</div>
+                        <div class="tabs__item" data-tab="5">Практична робота №5</div>
+                        <div class="tabs__item" data-tab="6">Практична робота №6</div>
+                        <div class="tabs__item" data-tab="7">Практична робота №7</div>
+                        <div class="tabs__item" data-tab="8">Практична робота №8</div>
+                        <div class="tabs__item" data-tab="9">Практична робота №9</div>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tabs-content__item" data-tab-content="1"></div>
+                        <div class="tabs-content__item" data-tab-content="2"></div>
+                        <div class="tabs-content__item" data-tab-content="3"></div>
+                        <div class="tabs-content__item" data-tab-content="4"></div>
+                        <div class="tabs-content__item" data-tab-content="5"></div>
+                        <div class="tabs-content__item" data-tab-content="6"></div>
+                        <div class="tabs-content__item" data-tab-content="7"></div>
+                        <div class="tabs-content__item" data-tab-content="8"></div>
+                        <div class="tabs-content__item" data-tab-content="9"></div>
                     </div>
                 </div>
             </section>
-            <section class="section content-section" id="works-section">
-                <div class="container"></div>
-            </section>
-
-            <section class="section contacts-section" id="contacts-section">
-                <div class="container"></div>
-            </section>
         </main>
         <footer class="footer">
-            <div></div>
+            <div class="container">
+                <p class="footer__text">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Всі права захищені.
+                </p>
+            </div>
         </footer>
     </div>
     <script

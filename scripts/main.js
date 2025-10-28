@@ -1,16 +1,11 @@
 $(document).ready(function() {
-    const burgerBtn = document.querySelector('.burger-btn');
-    const nav = document.querySelector('.nav');
+    $('.tabs__item').on('click', function() {
+        var tabId = $(this).data('tab'); // Наприклад: "tab1"
 
-    burgerBtn.addEventListener('click', function() {
-        burgerBtn.classList.toggle('active');
-        nav.classList.toggle('active');
-    });
+        $('.tabs__item').removeClass('tabs__item--active');
+        $(this).addClass('tabs__item--active');
 
-    $(document).click(function(event) {
-        if (!$(event.target).closest('.burger-btn, .nav').length) {
-            burgerBtn.classList.remove('active');
-            nav.classList.remove('active');
-        }
+        $('.tabs-content__item').removeClass('tabs-content__item--active');
+        $('.tabs-content__item[data-tab-content="' + tabId + '"]').addClass('tabs-content__item--active');
     });
 });
