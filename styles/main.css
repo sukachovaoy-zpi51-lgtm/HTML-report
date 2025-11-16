@@ -624,6 +624,8 @@ body {
     height: 0;
     width: 0;
     transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .inner-tabs-content__item--active {
@@ -633,6 +635,7 @@ body {
     transition: opacity 0.3s ease;
     width: 100%;
     font-size: 14px;
+    z-index: 2;
 }
 
 .inner-tabs-content p:not(:last-child) {
